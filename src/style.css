@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #4eac6d;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.right{
+    width: 73%;
+    height: 95vh;
+    background-color: #262626;
+    margin-right: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+.left{
+    width: 27%;
+    height: 100vh;
+    position: relative;
+}
+.heading{
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.logoName{
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+}
+.sub{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+}
+
+.welcomePara{
+    color: #adb5bd;
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+}
+.subWelcome{
+    font-family: 'Poppins',sans-serif;
+    color: #8f9198 ;
+    font-size: 14px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.checkField{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label{
+    color: #8f9198 ;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 10px;
+
+}
+
+#name,#roomName{
+    background: none;
+    background-color: #333;
+    width: 350px;
+    height: 39px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    color: #8f9198;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+#chk{
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.sub{
+    background:none;
+    background-color: #4eac6d;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    height: 39px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:600px) {
+    .welcome{
+        top: 50px;
+    }
+    .left{
+        height: 100px;
+        width: 100%;
+    }
+    .right{
+        height: 600px;
+        width: 90%;
+        margin-right: 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #name,#roomName,.sub{
+        width:  250px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <section>
+        
+        <div class="videoSection">
+            <div class="welcomeUser">Hello Welcome User</div>
+            <div class="videoContainer localVideo">
+                <video src="" id="local" autoplay muted></video>
+            </div>
+           
+        </div>
+        <div class="chatSection">
+            <div class="chatSectionHeading">
+                <p class="usersList">Users</p>
+                <p class="chat">Chat</p>
+            </div>
+            <div class="users"></div>
+            <div class="chatList">
+                <div class="chats">
+                </div>
+                <form action="#" class="bottomForm">
+                    <input type="text" id="chatText">
+                    <input type="submit" value="Enter">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerSection">
+            <button class="noVidBtn"><img src="./images/vid.png" alt="noVid" class="noVid"></button>
+            <button class="noMicBtn"><img src="./images/Mic.png" alt="mic" class="noMic"></button>
+            <button class="noScreenShare"><img src="./images/screen.png" alt="screen" class="noScreenShare"></button>
+            <button class="endCallBtn"><img src="./images/callEnd.png" alt="end" class="endCall"></button>
+         </div>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
